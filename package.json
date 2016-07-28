@@ -1,0 +1,7 @@
+{
+  "name": "systemjs-webpack-plugin",
+  "version": "0.1.0",
+  "description": "Webpack bundling for SystemJS",
+  "main": "systemjs-register-public-modules.js",
+  "license": "MIT"
+}
