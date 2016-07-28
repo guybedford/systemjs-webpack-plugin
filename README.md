@@ -38,7 +38,7 @@ module.exports = {
         // filter can also be a function
         {
           filter: (m) => m.relPath.match(/src/),
-          keyname: (m) => 'random-naming-system-' + m.id
+          keyname: 'random-naming-system-[id]'
         }
       ]
     })
