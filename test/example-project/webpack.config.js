@@ -7,7 +7,7 @@ module.exports = {
       bundlesConfigForChunks: true, // defaults to true
       registerModules: [
         { filter: 'local', keyname: 'app/[relPath]' },
-        { filter: 'public', keyname: module => 'publicModule-' + module.id }
+        { filter: 'public', keyname: m => m.request }
       ]
     })
   ],
