@@ -1,0 +1,12 @@
+<!doctype html>
+  <script src="../../node_modules/systemjs/dist/system.src.js"></script>
+  <script src="out.js"></script>
+
+  <script>
+    System.import('app/a.js').then(console.log.bind(console));
+
+    // dynamically loads webpack chunk for lodash
+    System.import('publicModule-5').then(function(lodash) {
+      console.log(lodash.mixin);
+    });
+  </script>
