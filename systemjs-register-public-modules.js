@@ -187,7 +187,7 @@ SystemJSRegisterPublicModules.prototype.apply = function(compiler) {
 
       return this.asString([
         "var publicModuleLoaderManifest = " + stringifySparseArray(manifest.registerModules) + ";",
-        (Object.keys(manifest.esModules).length ? "var publicESModules = " + stringifySparseArray(manifest.esModules) + ";" : ""),
+        "var publicESModules = " + stringifySparseArray(manifest.esModules) + ";",
         (bundlesConfigForChunks ? "var publicModuleChunks = " + stringifySparseArray(manifest.chunks) + ";" : ""),
         source
       ]);
