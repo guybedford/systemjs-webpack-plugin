@@ -42,10 +42,10 @@ SystemJSRegisterPublicModules.prototype.getModuleLoaderManifest = function(modul
   var moduleObjs = modules.map(function(m) {
     return {
       id: m.id,
-      request: m.rawRequest,
-      path: m.resource,
+      request: m.rawRequest || '',
+      path: m.resource || '',
 
-      relPath: m.resource.substr(0, path.length + 1) == path + sep ? m.resource.substr(path.length + 1) : m.resource,
+      relPath: m.resource && m.resource.substr(0, path.length + 1) == path + sep ? m.resource.substr(path.length + 1) : m.resource || '',
 
       // NB TODO:
       // isPackageMain: true / false
