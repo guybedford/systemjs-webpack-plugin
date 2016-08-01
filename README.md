@@ -5,6 +5,8 @@ Allows Webpack bundles to register specified public modules into the SystemJS lo
 
 Also supports configuring SystemJS to automatically load Webpack chunks on-demand when `System.import` is called to lazy load modules.
 
+_This is an experimental integration project, without any support guarantees yet._
+
 Example Configuration
 ---
 
